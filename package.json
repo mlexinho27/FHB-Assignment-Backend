@@ -18,7 +18,9 @@
     "@eslint/js": "^10.0.1",
     "eslint": "^10.4.1",
     "globals": "^17.6.0",
-    "nodemon": "^2.0.15"
+    "jest": "^30.4.2",
+    "nodemon": "^2.0.15",
+    "supertest": "^7.2.2"
   },
   "jest": {
     "testEnvironment": "node",
