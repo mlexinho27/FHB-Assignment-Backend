@@ -44,7 +44,7 @@ jobs:
             ${{ steps.image.outputs.name }}:latest
 
       - name: Security-Scan des Images mit Trivy
-        uses: aquasecurity/trivy-action@0.36.0
+        uses: aquasecurity/trivy-action@v0.36.0
         with:
           image-ref: ${{ steps.image.outputs.name }}:${{ steps.pkg.outputs.version }}
           format: table
