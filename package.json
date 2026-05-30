@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --coverage",
+    "lint": "eslint ."
   },
   "author": "",
   "license": "ISC",
@@ -14,6 +15,20 @@
     "express": "^4.17.3"
   },
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.4.1",
+    "globals": "^17.6.0",
     "nodemon": "^2.0.15"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coverageReporters": [
+      "text",
+      "lcov"
+    ],
+    "collectCoverageFrom": [
+      "app.js",
+      "utils/**/*.js"
+    ]
   }
 }
