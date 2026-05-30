@@ -2,6 +2,7 @@ const express = require('express')
 const { generateId, isValidNote } = require('./utils/note_helper')
 
 const app = express()
+app.disable('x-powered-by')
 
 let notes = [
   { id: 1, content: 'HTML is easy', date: '2022-01-10T17:30:31.098Z', important: true },

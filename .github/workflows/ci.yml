@@ -20,7 +20,7 @@ jobs:
           cache: npm
 
       - name: Abhaengigkeiten installieren
-        run: npm ci
+        run: npm ci --ignore-scripts
 
       - name: ESLint pruefen (Quality-Gate)
         run: npm run lint
@@ -49,7 +49,7 @@ jobs:
           cache: npm
 
       - name: Abhaengigkeiten installieren
-        run: npm ci
+        run: npm ci --ignore-scripts
 
       - name: Tests + Coverage fuer Sonar erzeugen
         run: npm test

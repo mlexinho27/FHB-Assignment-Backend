@@ -2,7 +2,7 @@
 FROM node:22-slim AS build
 WORKDIR /app
 COPY package*.json ./
-RUN npm ci --omit=dev
+RUN npm ci --omit=dev --ignore-scripts
 COPY app.js index.js ./
 COPY utils ./utils
 
