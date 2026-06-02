@@ -29,7 +29,7 @@ test('GET / liefert die HTML-Startseite', async () => {
     .get('/')
     .expect(200)
 
-  expect(response.text).toContain('Hello World')
+  expect(response.text).toContain('Hello from MCCE Group 7')
 })
 
 test('GET /api/notes/:id liefert eine einzelne Notiz', async () => {
